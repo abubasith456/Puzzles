@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/background_tint"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_2sdp">
+
+            <TextView
+                android:id="@+id/textViewHeader"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/work_sans_semibold"
+                android:gravity="start|center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Puzzles"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp" />
+
+
+            <LinearLayout
+                android:id="@+id/layoutLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_55sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:layout_gravity="end"
+                android:paddingEnd="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/icon_logout"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.example.puzzle.gesture_detect.GestureDetectGridView
+                android:id="@+id/grid"
+                android:layout_width="@dimen/_300sdp"
+                android:layout_height="@dimen/_300sdp" />
+
+            <LinearLayout
+                android:id="@+id/layoutScramble"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/background_corner_radius_white"
+                android:backgroundTint="@color/colorBlue"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:fontFamily="@font/work_sans_semibold"
+                    android:text="Scramble"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewScoreBoard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score board"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/work_sans_bold"
+                android:textColor="@color/colorBlue"
+                android:textSize="@dimen/_15sdp"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</FrameLayout>
